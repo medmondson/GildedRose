@@ -43,8 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IItemFactory.cs" />
+    <Compile Include="Items\Invalid.cs" />
+    <Compile Include="Items\BackstagePass.cs" />
+    <Compile Include="Items\AgedBrie.cs" />
+    <Compile Include="Items\Conjured.cs" />
+    <Compile Include="IDegradeableItem.cs" />
+    <Compile Include="InventoryManager.cs" />
+    <Compile Include="Items\Normal.cs" />
+    <Compile Include="ItemFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Items\Sulfras.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
