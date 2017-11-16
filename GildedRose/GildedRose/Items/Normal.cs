@@ -6,13 +6,11 @@
         public string Name { get; }
         public int Quality { get; private set; }
 
-        private readonly string name;
-
         public Normal(int sellIn, int quality)
         {
-            name = "Normal Item";
-            this.Sellin = sellIn;
-            this.Quality = quality;
+            Name = "Normal Item";
+            Sellin = sellIn;
+            Quality = quality;
         }
 
         public void Degrade()
@@ -25,6 +23,9 @@
 
             if (Quality > 50)
                 Quality = 50;
+
+            if (Quality < 0)
+                Quality = 0;
 
             Sellin = Sellin - 1;
         }

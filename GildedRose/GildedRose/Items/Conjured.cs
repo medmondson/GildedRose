@@ -8,14 +8,23 @@
 
         public Conjured(int sellin, int quality)
         {
+            Name = "Conjured";
             Sellin = sellin;
             Quality = quality;
         }
 
         public void Degrade()
         {
+            var degradesMultiplier = 2;
+
+            if (Sellin < 0)
+                degradesMultiplier = degradesMultiplier * 2;
+
             Sellin = Sellin - 1;
-            Quality = Quality - 2; //degrades twice as fast
+            Quality = Quality - degradesMultiplier; //degrades twice as fast
+
+            if (Quality < 0)
+                Quality = 0;
         }
     }
 }

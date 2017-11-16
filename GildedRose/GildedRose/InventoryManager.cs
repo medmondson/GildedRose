@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
-using GildedRose.Items;
 
 namespace GildedRose
 {
     public class InventoryManager
     {
-        private readonly ItemFactory itemFactory = new ItemFactory();
+        private readonly IItemFactory itemFactory = new MemoryItemFactory();
         private readonly List<IDegradeableItem> items = new List<IDegradeableItem>();
 
         public void Add(string itemName, int sellin, int quality)

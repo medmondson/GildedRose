@@ -51,10 +51,10 @@
     <Compile Include="IDegradeableItem.cs" />
     <Compile Include="InventoryManager.cs" />
     <Compile Include="Items\Normal.cs" />
-    <Compile Include="ItemFactory.cs" />
+    <Compile Include="MemoryItemFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Items\Sulfras.cs" />
+    <Compile Include="Items\Sulfuras.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

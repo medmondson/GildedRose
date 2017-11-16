@@ -8,6 +8,7 @@
 
         public AgedBrie(int sellin, int quality)
         {
+            Name = "Aged Brie";
             Sellin = sellin;
             Quality = quality;
         }
@@ -16,6 +17,9 @@
         {
             Sellin = Sellin - 1;
             Quality = Quality + 1; //gets better with age
+
+            if (Quality > 50)
+                Quality = 50;
         }
     }
 }

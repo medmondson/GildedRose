@@ -8,6 +8,7 @@
 
         public BackstagePass(int sellin, int quality)
         {
+            Name = "Backstage passes";
             Sellin = sellin;
             Quality = quality;
         }
@@ -24,6 +25,9 @@
 
             if (Sellin < 0)
                 Quality = 0;
+
+            if (Quality > 50)
+                Quality = 50;
         }
     }
 }

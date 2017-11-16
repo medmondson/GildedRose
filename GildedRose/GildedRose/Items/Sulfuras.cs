@@ -1,16 +1,14 @@
 ﻿namespace GildedRose.Items
 {
-    public class Sulfras : IDegradeableItem
+    public class Sulfuras : IDegradeableItem
     {
         public int Sellin { get; }
         public string Name { get; }
         public int Quality { get; }
 
-        private readonly string name;
-
-        public Sulfras(int sellin, int quality)
+        public Sulfuras(int sellin, int quality)
         {
-            name = "Sulfras";
+            Name = "Sulfuras";
             Sellin = sellin;
             Quality = quality;
         }

@@ -2,17 +2,17 @@
 
 namespace GildedRose
 {
-    public class ItemFactory : IItemFactory
+    public class MemoryItemFactory : IItemFactory
     {
-        //Item factory stub. A real application would implement this for 
+        //In memory stub, other implentations of IItemFactory could be made for other data stores
         public IDegradeableItem Create(string itemName, int sellin, int quality)
         {
             switch (itemName)
             {
                 case "Normal Item":
                     return new Normal(sellin, quality);
-                case "Sulfras":
-                    return new Sulfras(sellin, quality);
+                case "Sulfuras":
+                    return new Sulfuras(sellin, quality);
                 case "Conjured":
                     return new Conjured(sellin, quality);
                 case "Aged Brie":
