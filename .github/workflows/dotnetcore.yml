@@ -16,3 +16,6 @@ jobs:
     - name: Build with dotnet
       working-directory: GildedRose
       run: dotnet build --configuration Release
+    - name: Test with dotnet
+      working-directory: GildedRose
+      run: dotnet test
