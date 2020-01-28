@@ -14,6 +14,5 @@ jobs:
       with:
         dotnet-version: 2.2.108
     - name: Build with dotnet
-      run: |
-          cd GuildedRose
-          dotnet build --configuration Release
+      working-directory: GuildedRose
+      run: dotnet build --configuration Release
